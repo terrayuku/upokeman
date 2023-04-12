@@ -1,9 +1,5 @@
 package com.upokeman.upokeman.models;
 
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import lombok.Builder;
-import lombok.Data;
-
 import java.io.Serializable;
 
 public class Pokeman implements Serializable {
