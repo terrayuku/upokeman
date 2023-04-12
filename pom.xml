@@ -15,6 +15,7 @@
 	<description>UPokeman Assessment</description>
 	<properties>
 		<java.version>11</java.version>
+		<maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -57,6 +58,18 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${maven-jar-plugin.version}</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.upokeman.upokeman.UpokemanApplication</mainClass>
+						</manifest>
+					</archive>
 				</configuration>
 			</plugin>
 		</plugins>

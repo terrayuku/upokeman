@@ -1,6 +1,5 @@
 package com.upokeman.upokeman.rest;
 
-import com.upokeman.upokeman.models.Pokeman;
 import com.upokeman.upokeman.models.PokemanResponse;
 import com.upokeman.upokeman.service.UPokemanService;
 import org.springframework.beans.factory.annotation.Autowired;
